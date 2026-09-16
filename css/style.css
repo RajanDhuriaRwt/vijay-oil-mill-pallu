@@ -15,6 +15,8 @@ body {
 
 :root {
     --main-font: "Sora", sans-serif;
+    --main-color: #EF7E04;
+    --dark-color: #a0590c;
 }
 
 a {
@@ -57,13 +59,60 @@ section {
     position: relative;
 }
 
+.btn-primary {
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 12px;
+    justify-content: center;
+    /* min-height: 50px; */
+    border-radius: 30px;
+    padding: 12px 24px !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color) !important;
+    border-color: var(--dark-color) !important;
+}
+
+.btn-outline-primary {
+    background-color: transparent !important;
+    border-color: #fff !important;
+    color: #fff !important;
+    display: inline-flex;
+    align-items: center;
+    column-gap: 12px;
+    justify-content: center;
+    /* min-height: 50px; */
+    border-radius: 30px;
+    padding: 12px 24px !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--main-color) !important;
+    border-color: var(--main-color) !important;
+}
+
 header.header-main {
     position: absolute;
     z-index: 5;
     width: 100%;
 }
 
-.home-banner .bg-color{
+.header-inner .navbar-nav .nav-link {
+    color: #fff !important;
+    border: solid 1px transparent;
+    border-radius: 30px;
+    padding: 4px 16px;
+}
+
+.header-inner .navbar-nav .nav-link.active,
+.header-inner .navbar-nav .nav-link:hover {
+    border-color: #fff !important;
+}
+
+.home-banner .bg-color {
     padding: 280px 0;
     background-color: #00000099;
     /* background: linear-gradient(270deg, #00000000 34.86%, #000000 100%); */
@@ -88,4 +137,27 @@ header.header-main {
 .header-inner .navbar-nav {
     width: calc(100% - 220px);
     justify-content: center;
+    column-gap: 24px;
+}
+
+.header-btn-main .btn-primary {
+    min-width: 200px;
+}
+
+.home-banner-text h1 {
+    font-size: 60px;
+    color: #fff;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+.home-banner-text h1 span {
+    color: var(--main-color);
+}
+
+.home-banner-text .banner-btns {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+    margin-top: 30px;
 }
