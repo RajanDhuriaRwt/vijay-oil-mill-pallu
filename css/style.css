@@ -356,8 +356,8 @@ header.header-main {
     color: #000  !important;
 }
 .cta-section .cta-text .btn-primary.white:hover {
-    background-color: var(--dark-color) !important;
-    border-color: var(--dark-color) !important;
+    background-color: #000 !important;
+    border-color: #000 !important;
     color: #fff !important;
 }
 footer {
