@@ -559,3 +559,17 @@ footer {
     border-radius: 16px;
     overflow: hidden;
 }
+
+.list-icon-box {
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    background-color: #FFF8F2;
+    border-radius: 10px;
+    column-gap: 16px;
+    color: #000;
+}
+
+.define-oil {
+    background-color: #FFF8F2;
+}
