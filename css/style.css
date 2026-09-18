@@ -32,6 +32,21 @@ span {
     transition: all 0.5s;
 }
 
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+}
+
 img {
     max-width: 100%;
     object-fit: cover;
@@ -65,6 +80,16 @@ p {
 
 .mt-40 {
     margin-top: 40px;
+}
+
+.form-control,
+.form-select {
+    min-height: 45px;
+    box-shadow: none !important;
+}
+
+textarea.form-control {
+    min-height: 120px;
 }
 
 section {
@@ -468,4 +493,69 @@ footer {
     font-size: 30px;
     font-weight: 700;
     margin-bottom: 16px;
+}
+
+.contact-box {
+    text-align: center;
+    padding: 30px;
+    background-color: #FFF8F2;
+    border-radius: 15px;
+    transition: all 0.3s;
+}
+
+.contact-box:hover {
+    background-color: #FD7E01;
+    color: #fff;
+}
+
+.contact-box:hover p,
+.contact-box:hover h6,
+.contact-box:hover h6 a {
+    color: #fff;
+    transition: 0ms;
+}
+
+.contact-box img {
+    margin-bottom: 24px;
+    max-width: 40px;
+}
+
+.contact-box p {
+    font-weight: 600;
+    color: #929699;
+}
+
+.contact-box h6.contact-links {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    justify-content: center;
+}
+
+.contact-box:hover img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(24%) hue-rotate(114deg) brightness(108%) contrast(108%);
+}
+
+.contact-form .form-div {
+    padding: 50px;
+    background-color: #FFF8F2;
+}
+
+.contact-form .form-div .row {
+    row-gap: 24px;
+}
+
+.contact-form .form-div h2 {
+    font-size: 24px;
+    margin-bottom: 30px;
+}
+
+.contact-form .form-div .form-group label {
+    font-weight: 500;
+    margin-bottom: 8px;
+}
+
+.contact-form .form-main-row {
+    border-radius: 16px;
+    overflow: hidden;
 }
