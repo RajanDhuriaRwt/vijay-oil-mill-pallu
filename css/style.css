@@ -264,6 +264,10 @@ header.header-main {
     font-weight: bold;
 }
 
+.home-products .main-row {
+    row-gap: 24px;
+}
+
 .product-box img {
     /* aspect-ratio: 1; */
     border-radius: 16px;
@@ -624,6 +628,10 @@ footer {
     font-size: 16px;
 }
 
+.process-details {
+    padding-top: 100px;
+}
+
 .process-box span {
     color: #0353C6;
     margin-bottom: 8px;
@@ -645,6 +653,17 @@ footer {
     border-radius: 10px;
     background-color: #FFF8F2;
     height: 100%;
+}
+
+.define-oil-box {
+    padding: 24px;
+    display: flex;
+    align-items: start;
+    column-gap: 16px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: solid 1px #6D756A33;
+    margin-bottom: 24px;
 }
 
 @media (max-width:992px) {
