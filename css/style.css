@@ -604,6 +604,10 @@ footer {
     background-color: #FFF8F2;
 }
 
+.define-oil .main-row {
+    align-items: center;
+}
+
 .define-oil-box span {
     width: 24px;
     height: 24px;
@@ -767,6 +771,10 @@ footer {
         padding: 40px 0;
     }
 
+    .process-details {
+        padding-top: 40px;
+    }
+
     .why-section .main-row,
     .contact-info .main-row {
         justify-content: center;
@@ -775,7 +783,8 @@ footer {
     .home-brand .row,
     .home-products .main-row,
     .mission-section .main-row,
-    .contact-info .main-row {
+    .contact-info .main-row,
+    .process-details .main-row {
         row-gap: 24px;
     }
 
@@ -783,6 +792,11 @@ footer {
     .home-brand .img-box img,
     .product-box img {
         height: 350px;
+        width: 100%;
+    }
+
+    .define-oil .img-box img {
+        height: 550px;
         width: 100%;
     }
 
@@ -815,6 +829,10 @@ footer {
     .editor-content h2 {
         font-size: 24px;
     }
+
+    .footer-logo .navbar-brand img {
+        max-width: 200px;
+    }
 }
 
 @media (max-width:576px) {
@@ -826,6 +844,19 @@ footer {
         flex-direction: column;
         row-gap: 16px;
         align-items: start;
+    }
+
+    .page-banner-text .banner-btns,
+    .home-brand .banner-btns {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .list-icon-box {
+        margin-top: 16px;
     }
 
     .home-banner-text h5,
@@ -866,5 +897,14 @@ footer {
     .copyright-row {
         flex-wrap: wrap;
         row-gap: 24px;
+    }
+
+    .col-exp-box {
+        width: calc(50% - 24px);
+    }
+
+    .product-content h3,
+    .why-box h3 {
+        font-size: 20px;
     }
 }
